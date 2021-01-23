@@ -38,6 +38,7 @@
 
 .bg-primary {
   background-color: var(--primary);
+  padding: 0 8px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
