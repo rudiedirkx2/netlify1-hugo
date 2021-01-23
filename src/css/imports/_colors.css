@@ -38,6 +38,8 @@
 
 .bg-primary {
   background-color: var(--primary);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .bg-highlight {
