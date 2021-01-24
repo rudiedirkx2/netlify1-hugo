@@ -7,6 +7,39 @@
 {{ partial "pieces" . }}
 
 <table>
+	<caption><code>.Pages</code></caption>
+	<tr>
+		<th>Kind</th>
+		<th>Type</th>
+		<th>Title</th>
+	</tr>
+	{{ range .Pages }}
+		<tr>
+			<td>{{ .Kind }}</td>
+			<td>{{ .Type }}</td>
+			<td>{{ .Title }}</td>
+		</tr>
+	{{ end }}
+</table>
+
+<table>
+	<caption><code>.Data.Pages</code></caption>
+	<tr>
+		<th>Kind</th>
+		<th>Type</th>
+		<th>Title</th>
+	</tr>
+	{{ range .Data.Pages }}
+		<tr>
+			<td>{{ .Kind }}</td>
+			<td>{{ .Type }}</td>
+			<td>{{ .Title }}</td>
+		</tr>
+	{{ end }}
+</table>
+
+<table>
+	<caption><code>.Site.Pages</code></caption>
 	<tr>
 		<th>Kind</th>
 		<th>Type</th>
