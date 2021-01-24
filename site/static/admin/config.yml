@@ -39,6 +39,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Engels"
         name: en
         widget: object
+        collapsed: true
         fields:
           - {label: "Naam", name: name, widget: string, required: false}
           - {label: "Korte tekst", name: short, widget: markdown, required: false}
@@ -46,6 +47,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Duits"
         name: de
         widget: object
+        collapsed: true
         fields:
           - {label: "Naam", name: name, widget: string, required: false}
           - {label: "Korte tekst", name: short, widget: markdown, required: false}
