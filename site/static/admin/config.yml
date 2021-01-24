@@ -6,8 +6,8 @@ public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "piece" # Used in routes, ie.: /admin/collections/:slug/edit
-    identifier_field: name
-    slug: "{{number}}-{{name}}"
+    identifier_field: title
+    slug: "{{number}}-{{title}}"
     label: "Piece" # Used in the UI, ie.: "New Post"
     folder: "site/content/piece" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
