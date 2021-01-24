@@ -34,24 +34,24 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields:
           - {label: "Naam", name: name, widget: string}
-          - {label: "Korte tekst", name: short, widget: markdown}
-          - {label: "Lange tekst", name: long, widget: markdown}
+          - {label: "Korte tekst", name: short, widget: markdown, minimal: true, modes: [rich_text]}
+          - {label: "Lange tekst", name: long, widget: markdown, minimal: true, modes: [rich_text]}
       - label: "Engels"
         name: en
         widget: object
         collapsed: true
         fields:
           - {label: "Naam", name: name, widget: string, required: false}
-          - {label: "Korte tekst", name: short, widget: markdown, required: false}
-          - {label: "Lange tekst", name: long, widget: markdown, required: false}
+          - {label: "Korte tekst", name: short, widget: markdown, minimal: true, modes: [rich_text], required: false}
+          - {label: "Lange tekst", name: long, widget: markdown, minimal: true, modes: [rich_text], required: false}
       - label: "Duits"
         name: de
         widget: object
         collapsed: true
         fields:
           - {label: "Naam", name: name, widget: string, required: false}
-          - {label: "Korte tekst", name: short, widget: markdown, required: false}
-          - {label: "Lange tekst", name: long, widget: markdown, required: false}
+          - {label: "Korte tekst", name: short, widget: markdown, minimal: true, modes: [rich_text], required: false}
+          - {label: "Lange tekst", name: long, widget: markdown, minimal: true, modes: [rich_text], required: false}
   - name: "pages"
     label: "Pages"
     files:
