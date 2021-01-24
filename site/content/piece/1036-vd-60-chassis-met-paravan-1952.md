@@ -1,7 +1,7 @@
 ---
 route: 1-12
 number: "1036"
-name: VD 60 - Chassis met paravan - 1952
+title: VD 60 - Chassis met paravan - 1952
 images:
   - img/mus._nr._1036.png
 nl:
