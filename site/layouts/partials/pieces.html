@@ -1,7 +1,7 @@
 <div class="bg-off-white pv4">
 	<div class="ph3 mw7 center">
 		<h2 class="f2 b lh-title mb3">Stukken: route - nummer - naam</h2>
-		<p>{{ .Params.pieces_intro }}</p>
+		<div>{{% .Params.pieces_intro %}}</div>
 
 		<ul>
 			{{ range first 99 (where .Site.Pages "Type" "piece") }}
