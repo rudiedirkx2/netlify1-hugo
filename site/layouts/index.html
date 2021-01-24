@@ -6,8 +6,13 @@
 
 {{ partial "pieces" . }}
 
-{{ range .Site.Pages }}
-	{{ .Type }} | {{ .Title }}
-{{ end }}
+<table>
+	{{ range .Site.Pages }}
+		<tr>
+			<td>{{ .Type }}</td>
+			<td>{{ .Title }}</td>
+		</tr>
+	{{ end }}
+</table>
 
 {{ end }}
