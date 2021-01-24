@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Route", name: route, widget: string}
       - {label: "Museumnummber", name: number, widget: string}
-      - {label: "Admin.naam", name: name, widget: string}
+      - {label: "Admin.naam", name: title, widget: string}
       - label: "Afbeeldingen"
         label_singular: "Afbeelding"
         name: images
