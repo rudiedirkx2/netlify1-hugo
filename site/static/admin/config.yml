@@ -21,8 +21,8 @@ collections: # A list of collections the CMS should be able to edit
         widget: list
         required: false
         min: 0
-        field: {label: false, name: file, widget: image, allow_multiple: false}
-      - label: false
+        field: {label: "Afbeelding", name: file, widget: image, allow_multiple: false}
+      - label: "Geluidsfragmenten"
         label_singular: "Geluidsfragment"
         name: sounds
         widget: list
