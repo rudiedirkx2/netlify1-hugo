@@ -3,12 +3,14 @@
 		<h2 class="f2 b lh-title mb3">Stukken: route - nummer - naam</h2>
 		<div>{{ .Params.pieces_intro| markdownify }}</div>
 
-		<ul>
-			{{ range first 99 (where .Site.Pages "Type" "piece") }}
-				<li>
-					{{ .Params.route }} - <strong>{{ .Params.number }}</strong> - {{ .Title }}
-				</li>
-			{{ end }}
-		</ul>
+		<div class="cms">
+			<ul>
+				{{ range first 99 (where .Site.Pages "Type" "piece") }}
+					<li>
+						{{ .Params.route }} - <strong>{{ .Params.number }}</strong> - {{ .Title }}
+					</li>
+				{{ end }}
+			</ul>
+		</div>
 	</div>
 </div>
