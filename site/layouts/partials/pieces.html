@@ -5,9 +5,11 @@
 
 		<div class="cms">
 			<ul>
-				{{ range first 99 (where .Site.Pages "Type" "piece") }}
+				{{ range first 99 (where (where .Site.Pages "Kind" "page") "Type" "piece") }}
 					<li>
-						{{ .Params.route }} - <strong>{{ .Params.number }}</strong> - {{ .Title }}
+						{{ .Params.route }} -
+						<strong>{{ .Params.number }}</strong> -
+						<a href="{{ .Permalink }}">{{ .Title }}</a>
 					</li>
 				{{ end }}
 			</ul>
