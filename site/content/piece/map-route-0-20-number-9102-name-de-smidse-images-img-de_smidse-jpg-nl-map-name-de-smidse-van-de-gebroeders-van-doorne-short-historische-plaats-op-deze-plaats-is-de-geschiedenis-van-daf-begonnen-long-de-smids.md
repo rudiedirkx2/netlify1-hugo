@@ -2,8 +2,8 @@
 route: 0-20
 number: "9102"
 name: De Smidse
-images: img/de_smidse.jpg
-sounds: img/daf_museum_smidse2.jpg
+images: ""
+sounds: ""
 nl:
   name: de Smidse van de gebroeders van Doorne
   short: "Historische plaats: op deze plaats is de geschiedenis van DAF begonnen"
