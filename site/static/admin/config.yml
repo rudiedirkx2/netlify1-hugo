@@ -13,8 +13,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Route", name: route, widget: string}
       - {label: "Museumnummber", name: number, widget: string}
       - {label: "Admin.naam", name: name, widget: string}
-      - {label: "Afbeeldingen", name: images, widget: image, allow_multiple: true}
-      - {label: "Geluidsfragmenten", name: sounds, widget: file, allow_multiple: true}
+      - {label: "Afbeeldingen", name: images, widget: image, allow_multiple: true, required: false}
+      - {label: "Geluidsfragmenten", name: sounds, widget: file, allow_multiple: true, required: false}
       - label: "Nederlands"
         name: nl
         widget: object
