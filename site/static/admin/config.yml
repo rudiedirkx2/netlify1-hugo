@@ -52,8 +52,16 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Naam", name: name, widget: string, required: false}
           - {label: "Korte tekst", name: short, widget: markdown, minimal: true, modes: [rich_text], required: false}
           - {label: "Lange tekst", name: long, widget: markdown, minimal: true, modes: [rich_text], required: false}
+  - name: "page"
+    label: "Custom pages"
+    folder: "site/content/page"
+    create: true
+    fields:
+      - {label: "Title", name: title, widget: string}
+      - {label: "Subtitle", name: subtitle, widget: string}
+      - {label: "Body", name: body, widget: markdown, minimal: true, modes: [rich_text]}
   - name: "pages"
-    label: "Pages"
+    label: "Fixed pages"
     files:
       - file: "site/content/_index.md"
         label: "Home Page"
