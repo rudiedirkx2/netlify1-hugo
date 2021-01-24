@@ -7,11 +7,11 @@ image: img/daftruck.jpg
 blurb:
   heading: Beginnen
   text: >-
-    - Vraag een account aan.
+    * Vraag een account aann.
 
-    - Kijk rond in bestaande stukken.
+    * Kijk rond in bestaande stukkenn.
 
-    - Voeg je eigen stukken toe. Maakt niet uit als het al bestaat. Samenvoegen doen we later.
+    * Voeg je eigen stukken toe. Maakt niet uit als het al bestaat. Samenvoegen doen we laterr.
 intro:
   heading: What we offer
   text: Kaldi is the ultimate spot for coffee lovers who want to learn about their
