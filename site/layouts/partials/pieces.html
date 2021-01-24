@@ -6,7 +6,7 @@
 		<ul>
 			{{ range first 99 (where .Site.Pages "Type" "piece") }}
 				<li>
-					{{ .route }} - <strong>{{ .number }}</strong> - {{ .Title }}
+					{{ .Type }} - {{ .Title }}
 				</li>
 			{{ end }}
 		</ul>
