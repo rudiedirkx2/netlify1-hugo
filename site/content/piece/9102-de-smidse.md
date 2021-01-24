@@ -1,7 +1,7 @@
 ---
 route: 0-20
 number: "9102"
-name: De Smidse
+title: De Smidse
 images:
   - img/de_smidse.jpg
   - img/daf_museum_smidse2.jpg
