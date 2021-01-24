@@ -1,4 +1,0 @@
----
-title: "Stukken"
-type: pieces
-----
