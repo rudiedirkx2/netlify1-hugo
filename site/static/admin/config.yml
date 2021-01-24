@@ -5,16 +5,37 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "site/content/post" # The path to the folder where the documents are stored
+  - name: "piece" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Piece" # Used in the UI, ie.: "New Post"
+    folder: "site/content/piece" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Route", name: route, widget: string}
+      - {label: "Museumnummber", name: number, widget: string}
+      - {label: "Admin.naam", name: name, widget: string}
+      - {label: "Afbeeldingen", name: images, widget: image, allow_multiple: true}
+      - {label: "Geluidsfragmenten", name: sounds, widget: file, allow_multiple: true}
+      - label: "Nederlands"
+        name: nl
+        widget: object
+        fields:
+          - {label: "Naam", name: name, widget: string}
+          - {label: "Korte tekst", name: short, widget: markdown}
+          - {label: "Lange tekst", name: long, widget: markdown}
+      - label: "Engels"
+        name: en
+        widget: object
+        fields:
+          - {label: "Naam", name: name, widget: string, required: false}
+          - {label: "Korte tekst", name: short, widget: markdown, required: false}
+          - {label: "Lange tekst", name: long, widget: markdown, required: false}
+      - label: "Duits"
+        name: de
+        widget: object
+        fields:
+          - {label: "Naam", name: name, widget: string, required: false}
+          - {label: "Korte tekst", name: short, widget: markdown, required: false}
+          - {label: "Lange tekst", name: long, widget: markdown, required: false}
   - name: "pages"
     label: "Pages"
     files:
