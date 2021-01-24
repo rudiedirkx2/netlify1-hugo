@@ -21,14 +21,14 @@ collections: # A list of collections the CMS should be able to edit
         widget: list
         required: false
         min: 0
-        field: {name: file, widget: image, allow_multiple: false}
-      - label: "Geluidsfragmenten"
+        field: {label: false, name: file, widget: image, allow_multiple: false}
+      - label: false
         label_singular: "Geluidsfragment"
         name: sounds
         widget: list
         required: false
         min: 0
-        field: {name: file, widget: file, allow_multiple: false}
+        field: {label: "Geluidsfragment", name: file, widget: file, allow_multiple: false}
       - label: "Nederlands"
         name: nl
         widget: object
