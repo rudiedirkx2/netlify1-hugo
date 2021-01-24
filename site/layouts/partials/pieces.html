@@ -6,7 +6,7 @@
 
 		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
 			{{ range .Data.Pages }}
-				<li><a href="{{ .Permalink }}">{{ .Title }} | {{ . }}</a></li>
+				<li><a href="{{ .Permalink }}">{{ .Type }} | {{ .Title }} | {{ . }}</a></li>
 			{{ end }}
 
 			{{ range first 99 (where .Data.Pages "Type" "piece") }}
