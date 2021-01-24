@@ -6,4 +6,8 @@
 
 {{ partial "pieces" . }}
 
+{{ range .Site.Pages }}
+	{{ .Type }} | {{ .Title }}
+{{ end }}
+
 {{ end }}
