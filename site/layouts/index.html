@@ -7,8 +7,14 @@
 {{ partial "pieces" . }}
 
 <table>
+	<tr>
+		<th>Kind</th>
+		<th>Type</th>
+		<th>Title</th>
+	</tr>
 	{{ range .Site.Pages }}
 		<tr>
+			<td>{{ .Kind }}</td>
 			<td>{{ .Type }}</td>
 			<td>{{ .Title }}</td>
 		</tr>
