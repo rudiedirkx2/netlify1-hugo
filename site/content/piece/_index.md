@@ -1,4 +1,4 @@
 ---
-title: "Values"
+title: "Stukken"
 type: pieces
 ----
