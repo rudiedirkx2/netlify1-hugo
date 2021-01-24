@@ -2,7 +2,9 @@
 route: 0-20
 number: "9102"
 name: De Smidse
-images: ""
+images:
+  - img/de_smidse.jpg
+  - img/daf_museum_smidse2.jpg
 sounds: ""
 nl:
   name: de Smidse van de gebroeders van Doorne
