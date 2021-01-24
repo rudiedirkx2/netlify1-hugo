@@ -9,7 +9,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "piece" # Used in routes, ie.: /admin/collections/:slug/edit
     identifier_field: title
     slug: "{{number}}-{{title}}"
-    label: "Piece" # Used in the UI, ie.: "New Post"
+    label: "Stuk" # Used in the UI, ie.: "New Post"
     folder: "site/content/piece" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -54,7 +54,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Korte tekst", name: short, widget: markdown, minimal: true, modes: [rich_text], required: false}
           - {label: "Lange tekst", name: long, widget: markdown, minimal: true, modes: [rich_text], required: false}
   - name: "page"
-    label: "Custom pages"
+    label: "Losse pagina's"
     folder: "site/content/page"
     create: true
     fields:
@@ -62,7 +62,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Subtitle", name: subtitle, widget: string}
       - {label: "Body", name: body, widget: markdown, minimal: true, modes: [rich_text]}
   - name: "pages"
-    label: "Fixed pages"
+    label: "Vaste pagina's"
     files:
       - file: "site/content/_index.md"
         label: "Home Page"
