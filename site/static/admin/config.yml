@@ -6,6 +6,8 @@ public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "piece" # Used in routes, ie.: /admin/collections/:slug/edit
+    identifier_field: name
+    slug: "{{number}}-{{name}}"
     label: "Piece" # Used in the UI, ie.: "New Post"
     folder: "site/content/piece" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -13,8 +15,16 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Route", name: route, widget: string}
       - {label: "Museumnummber", name: number, widget: string}
       - {label: "Admin.naam", name: name, widget: string}
-      - {label: "Afbeeldingen", name: images, widget: image, allow_multiple: true, required: false}
-      - {label: "Geluidsfragmenten", name: sounds, widget: file, allow_multiple: true, required: false}
+      - label: "Afbeeldingen"
+        name: images
+        widget: list
+        required: false
+        field: {label: "Afbeelding", name: file, widget: image, allow_multiple: false, required: false}
+      - label: "Geluidsfragmenten"
+        name: sounds
+        widget: list
+        required: false
+        field: {label: "Geluidsfragment", name: file, widget: file, allow_multiple: false, required: false}
       - label: "Nederlands"
         name: nl
         widget: object
