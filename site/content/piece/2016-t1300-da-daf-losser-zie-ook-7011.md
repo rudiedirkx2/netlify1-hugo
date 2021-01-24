@@ -2,6 +2,8 @@
 route: 1-14
 number: "2016"
 title: T1300  DA - DAF Losser - zie ook 7011
+images:
+  - img/modeltruck_van_gend_en_loos.jpg
 nl:
   name: T1300 trekker met DAF losser plus laadkist; 1961
   short: Voorloper Intermodaal Transport
