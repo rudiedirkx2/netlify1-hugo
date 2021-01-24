@@ -36,4 +36,6 @@ values:
     one of colonialism and mindless abuse of natural resources and human lives.
     We want to turn this around and return the coffee trade to the drink’s
     exhilarating, empowering and unifying nature.
+pieces_intro: Hieronder staat een lijst met de belangrijkste stukken in ons
+  museum. Kies een stuk en voeg tekst, een plaatje of een geluidsfragment toe.
 ---
