@@ -1,6 +1,6 @@
 ---
 title: "Thank you"
-type: page
+subtitle: "Woop woop"
 ---
 
 Form submitted.
