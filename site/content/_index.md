@@ -3,7 +3,7 @@ title: Informatie verzamelen
 subtitle: Hier gaan we alle info verzamelen die we samen doch alleen over de
   jaren vergaard hebben, zodat we eindelijk één bron van waarheid hebben voor
   het museum.
-image: img/daftruck.jpg
+image: img/grand-theft-archer-vice-citys.jpg
 blurb:
   heading: Beginnen
   text: >-
