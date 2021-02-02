@@ -5,7 +5,7 @@
 
 	<!-- Price -->
 	<p class="primary f1 b tc lh-title center">
-		<span class="f4">$</span>{{.price}}
+		<span class="f4">$</span>{{ (cond .price .price "?") }}
 	</p>
 
 	<!-- Description -->
