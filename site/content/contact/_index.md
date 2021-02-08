@@ -1,6 +1,6 @@
 ---
 title: Contact
-logo: img/2020-06-24_1547.png
+logo: img/bmo.png
 contact_entries:
   - heading: Location
     text: '3153 Lynn Avenue, South San Francisco, California 94080'
